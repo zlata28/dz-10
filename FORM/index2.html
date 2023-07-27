@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Первая форма</h2>
+    <form action="/" method="GET">
+        
+        <label for="name">Имя:</label>
+        <input tabindex="1" type="text id="name">
+
+        <label >
+            <span>Email:</span>
+            <input type="email" id="Iemail" name="email">
+        </label>
+
+        <label >
+            <span>Password:</span>
+            <input tabindex="2" type="Password" id="Ipass" name="pass">
+        </label>
+
+        <label for="tel">
+            <span>Telephone:</span>
+            <input type="tel" id="tel" name="tel">
+        </label>
+
+        <label for="news" >
+            <span>Subscribe?:</span>
+            <input type="checkbox" id="news" name="newsCheck">
+        </label>
+
+        <label>
+            <span>Выпадающее</span>
+            <select name="dpopMenu" id="dropMenu">
+                <option value="1">Первый</option>
+                <option value="2">Второй</option>
+                <option selected value="3">Третий</option>
+            </select>
+        </label>
+
+        <p>Gender</p>
+        <div class="sexCheck">
+            <label for="gender1">Male</label>
+            <input type="radio" value="male" id="gender1" name="sex">
+            <label for="gender2">Female</label>
+            <input type="radio" value="Female" id="gender2" name="sex">
+            <label for="gender3">Other</label>
+            <input type="radio" value="other" id="gender3" name="sex">
+        </div>
+        <fieldset>
+            <legend>Selecetc size:</legend>
+            <ul>
+                <li>
+                    <label>
+                        <span>Small</span>
+                        <input type="radio" id="small" name="size" value="small">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>Medium</span>
+                        <input checked type="radio" id="medium" name="size" value="medium">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span>Lagle</span>
+                        <input type="radio" id="lagle" name="size" value="small">
+                    </label>
+                </li>
+            </ul>
+
+        </fieldset>
+        <label>   
+               <span>Blog</span>
+               <input type="url" id="url" name="Iurl">
+        </label>
+
+        <label>   
+            <span>Date</span>
+            <input type="date" id="Idate" name="date">
+     </label>
+
+     <label>   
+        <span>Жанр:</span>
+        <input type="text" id="userGenre" name="genre" list="genreList" placeholder="Комедия">
+        <datalist id="genreList">
+            <option>Комедия</option>
+            <option>Ужасы</option>
+            <option>Драма</option>
+            <option>Триллер</option>
+            <option>Фантастика</option>
+            <option>Драма</option>
+            <option>Триллер</option>
+            <option>Фантастика</option>
+            <option>Драма</option>
+            <option>Триллер</option>
+            <option>Фантастика</option>
+            <option>Драма</option>
+            <option>Триллер</option>
+            <option>Фантастика</option>
+            <option>Драма</option>
+            <option>Триллер</option>
+            <option>Фантастика</option>
+            <option>Драма</option>
+            <option>Триллер</option>
+            <option>Фантастика</option>
+        </datalist>
+ </label>
+
+ <label>
+    <span>Счетчик</span>
+          
+ 
+ 
+ <label for="text">Текст:</label>
+        <textarea name="text" cols="30" rows="10"></textarea>
+    
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+    </form>
+</body>
+</html>
